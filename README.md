@@ -6,7 +6,7 @@ Built a PowerShell script that connects to Microsoft Entra ID via Microsoft Grap
 - User.Read.All — permission to read all user accounts
 - UserAuthenticationMethod.Read.All — permission to read MFA methods per user
 ```powershell
-  Connect-MgGraph -Scopes "User.Read.All", "UserAuthenticationMethod.Read.All" -NoWelcome
+Connect-MgGraph -Scopes "User.Read.All", "UserAuthenticationMethod.Read.All" -NoWelcome
 Write-Host "Connected to Graph" -ForegroundColor Green
 ```
 **Step 2 — Pulled all users from the tenant**
