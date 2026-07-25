@@ -146,15 +146,19 @@ foreach ($user in $noMFA) {
 - Found 90 users with no MFA
 - Automatically added all 90 to the No MFA Users security group
 - Final summary: Users added: 90 | Already in: 0
+
 <img width="741" height="804" alt="Screenshot 2026-07-25 at 14 43 56" src="https://github.com/user-attachments/assets/9271f53b-b270-4b50-b4a4-e2d2c556c478" />
 <img width="360" height="882" alt="Screenshot 2026-07-25 at 14 44 17" src="https://github.com/user-attachments/assets/ad9db6b8-3ae2-4ae2-992f-c5f24acbef2b" />
+
 **Step 14 — Targeted the group in MFA Registration Campaign**
 - Opened Entra portal → Protection → Authentication Methods → Registration Campaign
 - Under Include → selected the No MFA Users group created by the script
 - Campaign now automatically prompts all 90 flagged users to register MFA on next sign in
 - No manual intervention needed — script finds the users, group gets populated, campaign targets the group
+
 <img width="2844" height="1702" alt="Image 7-25-26 at 14 52" src="https://github.com/user-attachments/assets/f29d717a-98aa-4804-97ed-db5d3999fd9c" />
 <img width="2854" height="1148" alt="Image 7-25-26 at 14 52 (1)" src="https://github.com/user-attachments/assets/4165c205-c4c9-433a-bb5c-562e4b4f8347" />
+
 **Step 15 — Created custom Authentication Strength policy**
 - Opened Entra portal → Protection → Authentication Methods → Authentication Strengths
 - Created new custom strength named Authentication Strengthening
