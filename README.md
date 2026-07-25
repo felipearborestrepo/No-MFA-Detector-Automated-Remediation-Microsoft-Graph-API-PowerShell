@@ -126,7 +126,6 @@ $group = New-MgGroup -DisplayName "No MFA Users" `
 $groupId = "d956dc52-0279-498c-bda3-df34b1f61fd2"
 $added   = 0
 $skipped = 0
-
 foreach ($user in $noMFA) {
     $mgUser = Get-MgUser -UserId $user.UserPrincipalName
     try {
