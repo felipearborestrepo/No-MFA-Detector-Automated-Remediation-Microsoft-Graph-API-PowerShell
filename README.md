@@ -115,6 +115,7 @@ $group = New-MgGroup -DisplayName "No MFA Users"
     -MailNickname "NoMFAUsers"
 ```
 <img width="899" height="116" alt="Screenshot 2026-07-25 at 14 44 51" src="https://github.com/user-attachments/assets/1a7a8e89-936c-4b41-9969-338598ee73e2" />
+
 **Step 12 — Added automation loop to add flagged users to group**
 - Looped through every user in the $noMFA list
 - Checked if user was already a member using Get-MgGroupMember
