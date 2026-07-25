@@ -66,7 +66,6 @@ $hasMFA.Add([PSCustomObject]@{
 	MethodCount = $methods.Count
 })
 }
-}
 Write-Host "`nScan complete" -ForegroundColor Green
 Write-Host "No MFA: $($noMFA.Count)" -ForegroundColor Red
 Write-Host "MFA Enabled: $($hasMFA.Count)" -ForegroundColor Green
