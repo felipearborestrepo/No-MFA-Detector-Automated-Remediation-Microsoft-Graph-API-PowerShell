@@ -108,10 +108,10 @@ Connect-MgGraph -Scopes "User.Read.All","UserAuthenticationMethod.Read.All","Gro
 - Set SecurityEnabled: True and MailEnabled: False — security group not a distribution list
 - Group ID returned: d956dc52-0279-498c-bda3-df34b1f61fd2
 ```powershell
-$group = New-MgGroup -DisplayName "No MFA Users" `
-    -Description "Users with no MFA registered - auto populated by script" `
-    -MailEnabled:$false `
-    -SecurityEnabled:$true `
+$group = New-MgGroup -DisplayName "No MFA Users" 
+    -Description "Users with no MFA registered - auto populated by script" 
+    -MailEnabled:$false 
+    -SecurityEnabled:$true 
     -MailNickname "NoMFAUsers"
 ```
 <img width="899" height="116" alt="Screenshot 2026-07-25 at 14 44 51" src="https://github.com/user-attachments/assets/1a7a8e89-936c-4b41-9969-338598ee73e2" />
