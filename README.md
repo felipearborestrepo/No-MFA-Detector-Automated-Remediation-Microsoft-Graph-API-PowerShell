@@ -1,6 +1,9 @@
 # Module Description
 Built a PowerShell script that connects to Microsoft Entra ID via Microsoft Graph API, scans every enabled user account in the tenant, checks their registered authentication methods, identifies anyone relying solely on a password with no MFA configured, automatically adds flagged users to a security group, and triggers an MFA Registration Campaign. Exports a prioritized report of at-risk accounts.
 
+**Youtube video explaining project**
+https://www.youtube.com/watch?v=E2qwvQav27k&t=190s
+
 **Step 1 — Connected to Microsoft Graph**
 - Connected to Entra ID tenant using two scopes
 - User.Read.All — permission to read all user accounts
@@ -170,6 +173,3 @@ foreach ($user in $noMFA) {
 - ❌ Voice calls
 - ❌ Password only
 <img width="2832" height="680" alt="Image 7-25-26 at 14 55" src="https://github.com/user-attachments/assets/7de42e25-e024-4932-a099-50f264c031b1" />
-
-**Youtube video explaining project**
-https://www.youtube.com/watch?v=E2qwvQav27k&t=190s
